@@ -47,7 +47,7 @@ var config = {
                 type: "current",
                 location: "Brisbane",
                 locationID: "2174003",
-                apiKey: "YOUR_OPENWEATHER_API_KEY" // <--- PASTE YOUR API KEY HERE
+                apiKey: "bd0fbb67cca795da7e980b26ae14acfd" // <--- PASTE YOUR API KEY HERE
             }
         },
         {
@@ -59,7 +59,7 @@ var config = {
                 type: "forecast",
                 location: "Brisbane",
                 locationID: "2174003",
-                apiKey: "YOUR_OPENWEATHER_API_KEY" // <--- PASTE YOUR API KEY HERE
+                apiKey: "bd0fbb67cca795da7e980b26ae14acfd" // <--- PASTE YOUR API KEY HERE
             }
         }
     ]
