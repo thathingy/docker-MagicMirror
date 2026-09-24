@@ -13,7 +13,7 @@ WORKDIR /opt/magic_mirror
 RUN git clone --depth 1 -b ${branch} https://github.com/MichMich/MagicMirror.git .
 RUN cp -R modules /opt/default_modules
 RUN cp -R config /opt/default_config
-RUN npm install --unsafe-perm --silent
+RUN npm install --legacy-peer-deps
 
 COPY mm-docker-config.js docker-entrypoint.sh ./
 RUN chmod +x ./docker-entrypoint.sh
