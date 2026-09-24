@@ -33,12 +33,12 @@ var config = {
                 calendars: [
                     {
                         symbol: "google",
-                        color: "#4285F4", // Clear Blue indicator
+                        color: "#4285F4", // Google Blue
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
                         symbol: "graduation-cap",
-                        color: "#FFD700", // Churchie Gold indicator
+                        color: "#FFD700", // Churchie Gold
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
                 ]
@@ -48,11 +48,10 @@ var config = {
             module: "weather",
             position: "top_right",
             config: {
-                weatherProvider: "openweathermap",
+                weatherProvider: "openmeteo",
                 type: "current",
-                location: "Brisbane",
-                locationID: "2174003",
-                apiKey: "bd0fbb67cca795da7e980b26ae14acfd"
+                lat: -27.4705, // Brisbane Latitude
+                lon: 153.0260  // Brisbane Longitude
             }
         },
         {
@@ -60,11 +59,10 @@ var config = {
             position: "top_right",
             header: "5-Day Forecast",
             config: {
-                weatherProvider: "openweathermap",
+                weatherProvider: "openmeteo",
                 type: "forecast",
-                location: "Brisbane",
-                locationID: "2174003",
-                apiKey: "bd0fbb67cca795da7e980b26ae14acfd"
+                lat: -27.4705, // Brisbane Latitude
+                lon: 153.0260  // Brisbane Longitude
             }
         }
     ]
