@@ -12,7 +12,7 @@ var config = {
 
     modules: [
         {
-            module: "alert",
+            module: "alert"
         },
         {
             module: "updatenotification",
@@ -27,9 +27,8 @@ var config = {
             }
         },
         {
-                    {
             module: "calendar",
-            header: "Family Schedule",
+            header: "Daily Schedule",
             position: "top_left",
             config: {
                 calendars: [
@@ -46,7 +45,6 @@ var config = {
                 ]
             }
         },
-
         {
             module: "weather",
             position: "top_right",
@@ -55,7 +53,7 @@ var config = {
                 type: "current",
                 location: "Brisbane",
                 locationID: "2174003",
-                apiKey: "bd0fbb67cca795da7e980b26ae14acfd" // <--- PASTE YOUR API KEY HERE
+                apiKey: "bd0fbb67cca795da7e980b26ae14acfd"
             }
         },
         {
@@ -67,7 +65,7 @@ var config = {
                 type: "forecast",
                 location: "Brisbane",
                 locationID: "2174003",
-                apiKey: "bd0fbb67cca795da7e980b26ae14acfd" // <--- PASTE YOUR API KEY HERE
+                apiKey: "bd0fbb67cca795da7e980b26ae14acfd"
             }
         }
     ]
