@@ -31,7 +31,7 @@ var config = {
                     day_cloudy: ["Bit overcast out there today."],
                     rain: ["Rain predicted! Pack an umbrella. 🌧️☔"],
                     thunderstorm: ["Stormy outside! Stay safe. ⚡⛈️"],
-                    "below_18": ["Chilly morning! Better grab your school jumper. 🧥"],
+                    "below_18": ["Chilly morning! Grab your school jumper. 🧥"],
                     "above_25": ["Warm day ahead! Keep hydrated. ☀️"]
                 }
             }
@@ -42,23 +42,21 @@ var config = {
             position: "top_left",
             config: {
                 colored: true,
-                coloredSymbols: true,
+                coloredSymbols: false, // ❌ This completely removes the broken graphic boxes
+                displaySymbol: false,  // ❌ Disables FontAwesome font lookups entirely
                 showLocation: false,
                 maxResults: 8,
                 fade: false,
                 maxTitleLength: 45,
-                // These turn your plain text lists into blocked layout tables
                 tableClass: "timetable-grid",
                 timeFormat: "absolute",
                 urgency: 0,
                 calendars: [
                     {
-                        symbol: "google",
                         color: "#5cc2f2", 
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
-                        symbol: "graduation-cap",
                         color: "#FFD700", // Churchie Gold
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
