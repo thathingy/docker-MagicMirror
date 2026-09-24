@@ -29,15 +29,16 @@ var config = {
                 coloredSymbols: true,
                 showLocation: false,
                 maxResults: 8,
+                fade: false,
                 calendars: [
                     {
                         symbol: "google",
-                        color: "#4285F4", // Google Blue
+                        color: "#4285F4", // Clear Blue indicator
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
                         symbol: "graduation-cap",
-                        color: "#FFD700", // Churchie Gold
+                        color: "#FFD700", // Churchie Gold indicator
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
                 ]
