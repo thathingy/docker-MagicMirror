@@ -12,34 +12,32 @@ var config = {
 
     modules: [
         {
-            module: "alert"
-        },
-        {
-            module: "updatenotification",
-            position: "top_bar"
-        },
-        {
             module: "clock",
             position: "top_left",
             config: {
                 dateFormat: "dddd, MMMM D, YYYY",
-                showPeriodUpper: true
+                showPeriodUpper: true,
+                displaySeconds: false
             }
         },
         {
             module: "calendar",
-            header: "Daily Schedule",
+            header: "Schedule Overview",
             position: "top_left",
             config: {
+                colored: true,
+                coloredSymbols: true,
+                showLocation: false,
+                maxResults: 8,
                 calendars: [
                     {
                         symbol: "google",
-                        color: "#4285F4",
+                        color: "#4285F4", // Google Blue
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
-                        symbol: "school",
-                        color: "#FFD700",
+                        symbol: "graduation-cap",
+                        color: "#FFD700", // Churchie Gold
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
                 ]
@@ -59,7 +57,7 @@ var config = {
         {
             module: "weather",
             position: "top_right",
-            header: "Weather Forecast",
+            header: "5-Day Forecast",
             config: {
                 weatherProvider: "openweathermap",
                 type: "forecast",
