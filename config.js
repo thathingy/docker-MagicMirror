@@ -21,6 +21,51 @@ var config = {
             }
         },
         {
+            module: "compliments",
+            position: "top_left",
+            config: {
+                weatherWithCompliments: true,
+                compliments: {
+                    anytime: [
+                        "Have a brilliant day!"
+                    ],
+                    day_sunny: [
+                        "Sunny skies today! Grab your sunnies. 😎",
+                        "Clear blue skies ahead!"
+                    ],
+                    day_cloudy: [
+                        "Bit overcast out there today."
+                    ],
+                    cloudy: [
+                        "Cloudy skies overhead today."
+                    ],
+                    rain: [
+                        "Rain predicted! Pack an umbrella. 🌧️☔",
+                        "Wet weather outside, take a brolly!"
+                    ],
+                    thunderstorm: [
+                        "Stormy outside! Stay safe. ⚡⛈️"
+                    ],
+                    snow: [
+                        "Brrr, freezing out there! ❄️"
+                    ],
+                    night_clear: [
+                        "Clear evening sky."
+                    ],
+                    night_cloudy: [
+                        "Cloudy night ahead."
+                    ],
+                    // Custom temperature threshold wardrobe triggers
+                    "below_18": [
+                        "Chilly day! Make sure to wear a jumper. 🧥"
+                    ],
+                    "above_25": [
+                        "Warm out there! Keep hydrated. ☀️"
+                    ]
+                }
+            }
+        },
+        {
             module: "calendar",
             header: "Schedule Overview",
             position: "top_left",
@@ -29,18 +74,18 @@ var config = {
                 coloredSymbols: true,
                 showLocation: false,
                 maxResults: 10,
-                fade: false,            // ❌ This stops the fading effect completely
-                fadePoint: 1,           // Forces all lines to stay at 100% brightness
-                maxTitleLength: 35,     // Gives long school event names more room before cutting off
+                fade: false,
+                fadePoint: 1,
+                maxTitleLength: 38,
                 calendars: [
                     {
                         symbol: "google",
-                        color: "#4285F4", // Clean blue tracking
+                        color: "#4285F4",
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
                         symbol: "graduation-cap",
-                        color: "#FFD700", // Churchie Gold tracking
+                        color: "#FFD700",
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
                 ]
