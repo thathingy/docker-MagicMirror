@@ -26,66 +26,40 @@ var config = {
             config: {
                 weatherWithCompliments: true,
                 compliments: {
-                    anytime: [
-                        "Have a brilliant day!"
-                    ],
-                    day_sunny: [
-                        "Sunny skies today! Grab your sunnies. 😎",
-                        "Clear blue skies ahead!"
-                    ],
-                    day_cloudy: [
-                        "Bit overcast out there today."
-                    ],
-                    cloudy: [
-                        "Cloudy skies overhead today."
-                    ],
-                    rain: [
-                        "Rain predicted! Pack an umbrella. 🌧️☔",
-                        "Wet weather outside, take a brolly!"
-                    ],
-                    thunderstorm: [
-                        "Stormy outside! Stay safe. ⚡⛈️"
-                    ],
-                    snow: [
-                        "Brrr, freezing out there! ❄️"
-                    ],
-                    night_clear: [
-                        "Clear evening sky."
-                    ],
-                    night_cloudy: [
-                        "Cloudy night ahead."
-                    ],
-                    // Custom temperature threshold wardrobe triggers
-                    "below_18": [
-                        "Chilly day! Make sure to wear a jumper. 🧥"
-                    ],
-                    "above_25": [
-                        "Warm out there! Keep hydrated. ☀️"
-                    ]
+                    anytime: ["Ready for a great day at Churchie!"],
+                    day_sunny: ["Clear blue skies! Remember your sunnies. 😎"],
+                    day_cloudy: ["Bit overcast out there today."],
+                    rain: ["Rain predicted! Pack an umbrella. 🌧️☔"],
+                    thunderstorm: ["Stormy outside! Stay safe. ⚡⛈️"],
+                    "below_18": ["Chilly morning! Better grab your school jumper. 🧥"],
+                    "above_25": ["Warm day ahead! Keep hydrated. ☀️"]
                 }
             }
         },
         {
             module: "calendar",
-            header: "Schedule Overview",
+            header: "School Timetable & Events",
             position: "top_left",
             config: {
                 colored: true,
                 coloredSymbols: true,
                 showLocation: false,
-                maxResults: 10,
+                maxResults: 8,
                 fade: false,
-                fadePoint: 1,
-                maxTitleLength: 38,
+                maxTitleLength: 45,
+                // These turn your plain text lists into blocked layout tables
+                tableClass: "timetable-grid",
+                timeFormat: "absolute",
+                urgency: 0,
                 calendars: [
                     {
                         symbol: "google",
-                        color: "#4285F4",
+                        color: "#5cc2f2", 
                         url: "https://calendar.google.com/calendar/ical/1382abd753f572abe42c619efb9ee71576d680fd38f5661f4711b23cd3f6d0fd%40group.calendar.google.com/private-ec5db411e0b36493eaa1124c0ddb1565/basic.ics"
                     },
                     {
                         symbol: "graduation-cap",
-                        color: "#FFD700",
+                        color: "#FFD700", // Churchie Gold
                         url: "https://my.churchie.com.au/calendar/export.php?export=all&event_type=&token=3ee8dffe24a12abfc929b4a70"
                     }
                 ]
