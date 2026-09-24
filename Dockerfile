@@ -1,4 +1,4 @@
-FROM node:12-buster
+FROM node:16-bullseye
 
 RUN set -e; \
     apt update; \
