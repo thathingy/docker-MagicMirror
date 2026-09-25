@@ -45,14 +45,14 @@ var config = {
                 coloredSymbols: false,
                 displaySymbol: false,
                 showLocation: false,
-                maxResults: 15,
+                maxResults: 7,            // ❌ Reduced from 15 to ensure it fits perfectly on screen
                 fade: false,
-                maxTitleLength: 35,
-                tableClass: "timetable-grid",
+                maxTitleLength: 30,       // Prevents descriptions from pushing columns out
                 timeFormat: "absolute",
-                urgency: 7, // Forces a strict 7-day lookahead window
-                showEnd: true, // Displays structural lesson start and end timings
+                urgency: 7,
+                showEnd: true,
                 getRelative: 0,
+                sliceMultiDayEvents: true, // Forces long events to separate out cleanly into daily rows
                 calendars: [
                     {
                         color: "#5cc2f2", 
@@ -73,7 +73,7 @@ var config = {
                 type: "current",
                 lat: -27.4705,
                 lon: 153.0260,
-                showPrecipitationProbability: true, // ✅ Shows Rain %
+                showPrecipitationProbability: true,
                 showWindDirection: false,
                 showHumidity: true
             }
@@ -87,8 +87,8 @@ var config = {
                 type: "forecast",
                 lat: -27.4705,
                 lon: 153.0260,
-                showPrecipitationProbability: true, // ✅ Shows Rain % forecast columns
-                maxNumberOfDays: 7
+                showPrecipitationProbability: true,
+                maxNumberOfDays: 5        // ❌ Limited to 5 rows vertically to fit the screen bounds safely
             }
         }
     ]
