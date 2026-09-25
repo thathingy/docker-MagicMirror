@@ -45,14 +45,15 @@ var config = {
                 coloredSymbols: false,
                 displaySymbol: false,
                 showLocation: false,
-                maxResults: 7,            // ❌ Reduced from 15 to ensure it fits perfectly on screen
+                maxResults: 6,                 // ❌ Caps rows strictly to 6 to save vertical space
                 fade: false,
-                maxTitleLength: 30,       // Prevents descriptions from pushing columns out
+                maxTitleLength: 28,
                 timeFormat: "absolute",
                 urgency: 7,
                 showEnd: true,
                 getRelative: 0,
-                sliceMultiDayEvents: true, // Forces long events to separate out cleanly into daily rows
+                sliceMultiDayEvents: false,    // ❌ Fixes the duplicate holiday row spam bug
+                showFullDayEvents: false,      // ❌ Restricts display to active timed items/lessons
                 calendars: [
                     {
                         color: "#5cc2f2", 
@@ -88,7 +89,7 @@ var config = {
                 lat: -27.4705,
                 lon: 153.0260,
                 showPrecipitationProbability: true,
-                maxNumberOfDays: 5        // ❌ Limited to 5 rows vertically to fit the screen bounds safely
+                maxNumberOfDays: 4             // ❌ Limited to 4 rows to stay inside screen bounds
             }
         }
     ]
