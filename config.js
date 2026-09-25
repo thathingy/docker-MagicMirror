@@ -45,15 +45,15 @@ var config = {
                 coloredSymbols: false,
                 displaySymbol: false,
                 showLocation: false,
-                maxResults: 6,                 // ❌ Caps rows strictly to 6 to save vertical space
+                maxResults: 8,
                 fade: false,
                 maxTitleLength: 28,
                 timeFormat: "absolute",
                 urgency: 7,
                 showEnd: true,
                 getRelative: 0,
-                sliceMultiDayEvents: false,    // ❌ Fixes the duplicate holiday row spam bug
-                showFullDayEvents: false,      // ❌ Restricts display to active timed items/lessons
+                sliceMultiDayEvents: false,
+                showFullDayEvents: false,
                 calendars: [
                     {
                         color: "#5cc2f2", 
@@ -89,7 +89,9 @@ var config = {
                 lat: -27.4705,
                 lon: 153.0260,
                 showPrecipitationProbability: true,
-                maxNumberOfDays: 4             // ❌ Limited to 4 rows to stay inside screen bounds
+                fade: false,                  // ❌ Disables layout fading for the forecast rows
+                fadePoint: 1,                 // Forces 100% brightness for all elements
+                maxNumberOfDays: 7            // 📅 Extends the display out to show all 7 days
             }
         }
     ]
